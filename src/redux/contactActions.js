@@ -4,6 +4,7 @@ export const ADD_CONTACT = 'ADD_CONTACT';
 export const REMOVE_CONTACT = 'REMOVE_CONTACT';
 export const FETCH_CONTACTS = 'FETCH_CONTACTS';
 export const EDIT_CONTACT = "EDIT_CONTACT";
+export const UPDATE_CONTACT = "UPDATE_CONTACT";
 
 export const addContact = (newContact) => {
     return dispatch => {
@@ -47,5 +48,11 @@ export const editContact = (id) => {
     return {
         type: EDIT_CONTACT,
         payload: id
+    }
+}
+
+export const updateContact = (updatedContact) => {
+    return {
+        
     }
 }
